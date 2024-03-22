@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Examen Parcia</title>
+</head>
+
+<body class="bg-imagen" style="background-image: url(./imagen/fondo.jpg);">
+    <div id="container1-6">
+        <div class="row">
+            <div class="col-4 text-white bg-dark">
+                <button type="button" class="btn btn-secondary"><i class="bi bi-floppy"></i></button>
+<button type="button" class="btn btn-secondary"><i class="bi bi-search"></i></button>
+<button type="button" class="btn btn-secondary"><i class="bi bi-trash3"></i></button>
+            </div>
+            <div class="col-4 text-white bg-dark"> CAROUSEL</div>
+            <div class="col-4 md-3 text-white bg-dark"> ACORDION</div>
+        </div>
+        <div class="row">
+            <!-- FORMULARIO-->
+            <div class="col-4">
+                <form class="row text-white">
+                    <div class="col-4 md-6">
+                        <label for="catalogo" class="form-label">Catálogo</label>
+                        <input type="number" class="form-control" id="catalogo">
+                    </div>
+                    <div class="col-4 md-6">
+                        <label for="Apellido" class="form-label">1er. Apellido</label>
+                        <input type="text" class="form-control" id="Apellido">
+                    </div>
+                    <div class="col-4 md-6">
+                        <label for="Apellido" class="form-label">2do. Apellido</label>
+                        <input type="text" class="form-control" id="Apellido">
+                    </div>
+                    <div class="col-4 md-6">
+                        <label for="nombre" class="form-label">1er. Nombre</label>
+                        <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="col-4 md-6">
+                        <label for="nombre" class="form-label">2do. Nombre</label>
+                        <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="col-4 md-6">
+                        <label for="Correo" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="Correo" placeholder="ejemplo@gmail.com">
+                    </div>
+                    <div class="col-3">
+                        <label for="edad" class="form-label">Edad</label>
+                        <input type="Number" class="form-control" id="edad">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputState" class="form-label">Grado</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Seleccionar</option>
+                            <option>Subteniente</option>
+                            <option>Alferez de Fragata</option>
+                            <option>Teniente</option>
+                            <option>Alferez de Navio</option>
+                            <option>Capitan 2do.</option>
+                            <option>Tenientes de Fragata</option>
+                            <option>Capitan 1ro.</option>
+                            <option>Tenientes de Navio</option>
+                            <option>Mayor</option>
+                            <option>Capitan de Corveta</option>
+                            <option>Teniente Coronel</option>
+                            <option>Capitan de Fragata</option>
+                            <option>Coronel</option>
+                            <option>Capitan de Navio</option>
+                            <option>General de Brigada</option>
+                            <option>Vicealmirante</option>
+                            <option>General de Divición</option>
+                            <option>Almirante</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputState" class="form-label">Arma</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Seleccionar</option>
+                            <option>Infantería</option>
+                            <option>Artillería</option>
+                            <option>Caballería</option>
+                            <option>Ingeniero</option>
+                            <option>Aviación</option>
+                            <option>Marina</option>
+                            <option>Transmisiones</option>
+                            <option>Material de Guerra</option>
+                            <option>Intendencía</option>
+                            <option>Policia Militar</option>
+                            <option>Sanidad Militar</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check mt-4">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Masculino
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Femenino
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-7 md-3">
+                        <label for="inputState" class="form-label">Dependencia</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Seleccionar</option>
+                            <option>1ra. Brigada Infantería</option>
+                            <option>2da. Brigada Infantería</option>
+                            <option>3ra. Brigada Infantería</option>
+                            <option>4ta. Brigada Infantería</option>
+                            <option>5ta. Brigada Infantería</option>
+                            <option>6ta. Brigada Infantería</option>
+                            <option>7ma. Brigada Infantería</option>
+                            <option>Comando de Comunicaciones</option>
+                            <option>Servicio Intendencía</option>
+                            <option>1ra. Brigada de Policia Militar</option>
+                            <option>Servicio de Sanidad Militar</option>
+                        </select>
+                    </div>
+                    <div class="col-2"><label for="inputState" class="form-label">Cursos</label>
+                        <div class="col-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Kaibil</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Informatica</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">Paracaidista</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5"></div>
+                    <div class="col-2">
+                        <button type="submit" class="btn btn-primary">ENVIAR</button>
+                    </div>
+                    <div class="col-5"></div>
+                    <div class="col-12"></div>
+                </form>
+            </div>
+            <!-- CAROUSEL -->
+            <div class="col-4">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                            aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                            aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                            aria-label="Slide 9"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+                            aria-label="Slide 10"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
+                            aria-label="Slide 11"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11"
+                            aria-label="Slide 12"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12"
+                            aria-label="Slide 0"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./imagen/1ra.jpg" class="d-block w-100" height="360">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagen/2da.jpg" class="d-block w-100" height="360">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagen/3ra.jpg" class="d-block w-100" height="360">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagen/4ta.jpg" class="d-block w-100" height="360">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagen/5ta.jpg" class="d-block w-100" height="360">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagen/6ta.jpg" class="d-block w-100" height="360">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagen/7ma.jpg" class="d-block w-100" height="360">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagen/tt.mm.jpg" class="d-block w-100" height="360">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagen/mg.jpg" class="d-block w-100" height="360">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagen/int.jpg" class="d-block w-100" height="360">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagen/mp.jpg" class="d-block w-100" height="360">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagen/sanidad.jpg" class="d-block w-100" height="360">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- ACORDEON -->
+            <div class="col-4">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <!-- PRIMERO -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                PRIMERA BRIGADA DE INFANTERIA "GLGL"
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                La Primera Brigada de Infantería "General Luis García León", conducirá operaciones
+                                militares, a partir del día “D” a la hora “H”, en su área de responsabilidad
+                                operacional, con el propósito de defender la soberanía e integridad del territorio,
+                                cooperando en situaciones de emergencia y calamidad pública, para garantizar la
+                                seguridad interior y exterior, protegiendo la vida y la integridad física de los
+                                ciudadanos y sus bienes, realizando acciones proactivas para alcanzar los objetivos
+                                permanentes y actuales.</div>
+                        </div>
+                    </div>
+                    <!-- SEGUNDO -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                SEGUNDA BRIGADA DE INFANTERIA "CGRC"
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">La Segunda Brigada de Infantería, "Capitan General Rafael
+                                Carrera", Zacapa, conducirá
+                                operaciones bélicas y no bélicas, en apoyo a la misión constitucional del Ejército de
+                                Guatemala, basados en los Artículos 244 y 249, desarrollando una eficiente defensa,
+                                cooperación institucional, administración, profesionalización y proyección en su área de
+                                responsabilidad, y a orden del Estado Mayor de la Defensa Nacional en cualquier parte de
+                                la República.</div>
+                        </div>
+                    </div>
+                    <!-- TERCERO -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                TERCERA BRIGADA DE INFANTERIA "GMAS"
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">La Tercera Brigada de Infantería "GMAS" conducirá operaciones
+                                militares,
+                                enmarcadas en las áreas de misión
+
+                                Fronteras nacionales y defensa contra amenazas transnacionales.
+
+                                Protección de infraestructura crítica y contribución al desarrollo nacional.
+
+                                Cooperación dentro del ámbito de gestión de riesgos y defensa civil,
+                                del sistema nacional de atención a desastres naturales.
+
+                                Acciones proactivas en apoyo a la política exterior del Estado de Guatemala a partir de
+                                la fecha y hasta nueva orden, en el área de responsabilidad operacional para coadyuvar a
+                                mantener la soberanía, la independencia, el honor de Guatemala, la integridad del
+                                territorio, la paz y la seguridad interior y exterior; con el propósito de crear
+                                condiciones que coadyuven a la construcción de condiciones de gobernabilidad que
+                                permitan el desarrollo integral del ciudadano, así como alcanzar los objetivos
+                                nacionales estratégicos permanentes y actuales.
+
+                                Asimismo, estará en condiciones de apoyar a otras brigadas o fuerzas de seguridad a
+                                orden del EMDN.</div>
+                        </div>
+                    </div>
+                    <!-- CUARTA -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                CUARTA BRIGADA DE INFANTERIA "GJRB"
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">La cuarta brigada de infantería realizará operaciones bélicas y
+                                no bélicas a partir del día "D" a la hora "H" para contribuir a crear las condiciones de
+                                seguridad que faciliten el desarrollo y progreso de la región con la finalidad de
+                                mantener la independencia, la soberanía y la integridad del territorio, la paz y el
+                                honor de Guatemala..</div>
+                        </div>
+                    </div>
+                    <!-- QUINTO -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                QUINTA BRIGADA DE INFANTERIA "MGS"
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">La Quinta Brigada de Infantería conducirá operaciones militares
+                                y de apoyo interinstitucional en el Área de Responsabilidad Operacional, a partir del
+                                día "D" a la hora "H", para garantizar los intereses nacionales, dentro de la estrategia
+                                de seguridad regional y convenios bilaterales; mediante la cooperación, asistencia
+                                recíproca y la disposición de capacidades militares que materialicen el compromiso del
+                                Estado de Guatemala, capaces de neutralizar las amenazas, que de forma unilateral u
+                                organizada pueda concretar el oponente, con el propósito de integrar la estrategia
+                                operacional del Ejército de Guatemala a las instituciones responsables de la seguridad
+                                pública, para coadyuvar en la construcción de las condiciones de gobernabilidad que
+                                permitan el desarrollo integral del ciudadano, así como alcanzar los objetivos
+                                nacionales permanentes y actuales</div>
+                        </div>
+                    </div>
+                    <!-- SEXTO -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                aria-controls="flush-collapseSix">
+                                SEXTA BRIGADA DE INFANTERIA "CAJDI"
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">La Sexta Brigada de Infantería "Coronel Antonio José de
+                                Irisarri", conducirá operaciones bélicas, no bélicas, de cooperación integral y de ayuda
+                                humanitaria, a partir del día "D" y hora "H", en su Área de Responsabilidad Operacional;
+                                para mantener la independencia, soberanía, el honor de Guatemala, la integridad del
+                                territorio, la paz y seguridad interior, exterior y colectiva en la región y apoyar en
+                                situaciones de emergencia y calamidad pública; con el propósito de contribuir a mantener
+                                el ambiente de seguridad que coadyuve al desarrollo integral de la población</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                                aria-controls="flush-collapseSeven">
+                                SEPTIMA BRIGADA DE INFANTERIA "GKELG"
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">La Séptima Brigada de Infantería “General Kjell Eugenio Laugerud
+                                García” conducirá operaciones bélicas y no bélicas, operaciones interinstitucionales, de
+                                seguridad y control en los departamentos de Baja Verapaz y el Progreso así como en los
+                                municipios de la cuenca del Polochic de Alta Verapaz, a partir del día “D” a la hora “H”
+                                con la finalidad de coadyuvar al desarrollo de los guatemaltecos, contrarrestando las
+                                amenazas multidimensionales y apoyar a las instituciones para brindar respuesta
+                                inmediata y eficiente ante desastres.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- CONTENEDOR DOS -->
+    <div id="container2-6">
+        <div class="row">
+            <div class="col-6 text-white bg-dark">TABLA</div>
+            <div class="col-6 text-white bg-dark">GALERIA</div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">Catalogo</th>
+                            <th scope="col">Nombre Completo</th>
+                            <th scope="col">Grado</th>
+                            <th scope="col">Arma</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>768936</td>
+                            <td>Jose Rodrigo Maldonado Morales</td>
+                            <td>Alferez de Fragata</td>
+                            <td>Naval</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>939452</td>
+                            <td>Roger Romulo Carpio Guerra</td>
+                            <td>Subteniente</td>
+                            <td>Policia Militar</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>678217</td>
+                            <td>Francisco Daniel Rivas Garcia</td>
+                            <td>Coronel</td>
+                            <td>Infantería</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>345892</td>
+                            <td>Ronad Emanuel Castellanos Quevedo</td>
+                            <td>Teniente</td>
+                            <td>Policia Militar</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>456460</td>
+                            <td>Luis Alejandro Mencos Chavez</td>
+                            <td>Capitán</td>
+                            <td>Transmisiones</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>389645</td>
+                            <td>Edgar Daniel Moran Mejía</td>
+                            <td>Teniente</td>
+                            <td>Caballería</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>478563</td>
+                            <td>jenifer Suceli Jimenez Gonzalez</td>
+                            <td>Alferez de Fragata </td>
+                            <td>Naval</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>672345</td>
+                            <td>Mario Daniel Chocoj Cruz</td>
+                            <td>Subteniente</td>
+                            <td>Policia Militar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- GALERIA -->
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-4"><img src="imagen/mil1.jpg" width="190" height="150"></div>
+                    <div class="col-4"><img src="./imagen/mil2.jpg" width="190" height="150"></div>
+                    <div class="col-4"><img src="./imagen/mil10.jpg" width="190" height="150"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4"><img src="./imagen/mil4.jpg" width="190" height="150"></div>
+                    <div class="col-4"><img src="./imagen/mil5.jpg" width="190" height="150"></div>
+                    <div class="col-4"><img src="./imagen/mil12.jpg" width="190" height="150"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4"><img src="./imagen/mil7.jpg" width="190" height="150"></div>
+                    <div class="col-4"><img src="./imagen/mil8.jpg" width="190" height="150"></div>
+                    <div class="col-4"><img src="./imagen/mil9.jpg" width="190" height="150"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
